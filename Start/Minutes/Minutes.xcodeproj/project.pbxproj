@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7353F06A243BD04700DC13EF /* AppCenterAnalytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7353F064243BD04700DC13EF /* AppCenterAnalytics.framework */; };
+		7353F06B243BD04700DC13EF /* AppCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7353F065243BD04700DC13EF /* AppCenter.framework */; };
+		7353F06C243BD04800DC13EF /* AppCenterCrashes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7353F066243BD04700DC13EF /* AppCenterCrashes.framework */; };
+		7353F06D243BD04800DC13EF /* AppCenterPush.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7353F067243BD04700DC13EF /* AppCenterPush.framework */; };
+		7353F06E243BD04800DC13EF /* AppCenterDistributeResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 7353F068243BD04700DC13EF /* AppCenterDistributeResources.bundle */; };
+		7353F06F243BD04800DC13EF /* AppCenterDistribute.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7353F069243BD04700DC13EF /* AppCenterDistribute.framework */; };
 		D3048F28202E2B2D00D45D7E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3048F27202E2B2D00D45D7E /* AppDelegate.swift */; };
 		D3048F2D202E2B2D00D45D7E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3048F2B202E2B2D00D45D7E /* Main.storyboard */; };
 		D3048F2F202E2B2D00D45D7E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3048F2E202E2B2D00D45D7E /* Assets.xcassets */; };
@@ -18,6 +24,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7353F064243BD04700DC13EF /* AppCenterAnalytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AppCenterAnalytics.framework; sourceTree = "<group>"; };
+		7353F065243BD04700DC13EF /* AppCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AppCenter.framework; sourceTree = "<group>"; };
+		7353F066243BD04700DC13EF /* AppCenterCrashes.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AppCenterCrashes.framework; sourceTree = "<group>"; };
+		7353F067243BD04700DC13EF /* AppCenterPush.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AppCenterPush.framework; sourceTree = "<group>"; };
+		7353F068243BD04700DC13EF /* AppCenterDistributeResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = AppCenterDistributeResources.bundle; sourceTree = "<group>"; };
+		7353F069243BD04700DC13EF /* AppCenterDistribute.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AppCenterDistribute.framework; sourceTree = "<group>"; };
 		D3048F24202E2B2D00D45D7E /* Minutes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Minutes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3048F27202E2B2D00D45D7E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D3048F2C202E2B2D00D45D7E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -35,15 +47,34 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7353F06A243BD04700DC13EF /* AppCenterAnalytics.framework in Frameworks */,
+				7353F06F243BD04800DC13EF /* AppCenterDistribute.framework in Frameworks */,
+				7353F06D243BD04800DC13EF /* AppCenterPush.framework in Frameworks */,
+				7353F06B243BD04700DC13EF /* AppCenter.framework in Frameworks */,
+				7353F06C243BD04800DC13EF /* AppCenterCrashes.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7353F063243BCF7A00DC13EF /* app center */ = {
+			isa = PBXGroup;
+			children = (
+				7353F065243BD04700DC13EF /* AppCenter.framework */,
+				7353F064243BD04700DC13EF /* AppCenterAnalytics.framework */,
+				7353F066243BD04700DC13EF /* AppCenterCrashes.framework */,
+				7353F069243BD04700DC13EF /* AppCenterDistribute.framework */,
+				7353F068243BD04700DC13EF /* AppCenterDistributeResources.bundle */,
+				7353F067243BD04700DC13EF /* AppCenterPush.framework */,
+			);
+			path = "app center";
+			sourceTree = "<group>";
+		};
 		D3048F1B202E2B2D00D45D7E = {
 			isa = PBXGroup;
 			children = (
+				7353F063243BCF7A00DC13EF /* app center */,
 				D3048F26202E2B2D00D45D7E /* Minutes */,
 				D3048F25202E2B2D00D45D7E /* Products */,
 			);
@@ -135,6 +166,7 @@
 				D3048F32202E2B2D00D45D7E /* LaunchScreen.storyboard in Resources */,
 				D3048F2F202E2B2D00D45D7E /* Assets.xcassets in Resources */,
 				D3048F2D202E2B2D00D45D7E /* Main.storyboard in Resources */,
+				7353F06E243BD04800DC13EF /* AppCenterDistributeResources.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,6 +320,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = B8MKEJ9N9F;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/app\\ center",
+					"$(PROJECT_DIR)/app\\ center",
+					"$(PROJECT_DIR)/app\\ center",
+					"$(PROJECT_DIR)/app\\ center",
+					"$(PROJECT_DIR)/app\\ center",
+				);
 				INFOPLIST_FILE = Minutes/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.microsoft.Minutes;
@@ -303,6 +343,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = B8MKEJ9N9F;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/app\\ center",
+					"$(PROJECT_DIR)/app\\ center",
+					"$(PROJECT_DIR)/app\\ center",
+					"$(PROJECT_DIR)/app\\ center",
+					"$(PROJECT_DIR)/app\\ center",
+				);
 				INFOPLIST_FILE = Minutes/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.microsoft.Minutes;
